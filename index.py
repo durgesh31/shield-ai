@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
 
-from model import Transaction, TransactionSchema
+from model.transaction import TransactionSchema
 
 app = Flask(__name__)
 
@@ -14,7 +14,7 @@ def post_transaction():
 
 @app.route('/get-transactions', methods=['GET'])
 def get_transactions():
-    return jsonify(transactions), 200
+   return jsonify(TransactionSchema(many=True).dump(transactions)), 200
 
 
 if __name__ == '__main__':
