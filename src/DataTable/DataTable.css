@@ -1,0 +1,106 @@
+.containerForm {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .left-panel-form, .right-panel-form {
+    width: 48%;
+    padding: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #0070B9;
+    border-radius: 5px;
+  }
+  
+  h3 {
+    color: #0070B9;
+  }
+  
+  p {
+    font-size: 14px;
+  }  
+
+  select[multiple] {
+  height: 80px;
+}
+
+
+.radio-group-horizontal {
+    display: flex;
+    gap: 20px; /* Space between options */
+    align-items: center;
+  }
+  
+  .radio-group-horizontal label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 5px; /* Space between radio button and text */
+  }
+  
+  .radio-group-horizontal input {
+    transform: scale(1.2); /* Enlarges radio button */
+    accent-color: #0070B9; /* Changes the radio button color */
+  }
+  
+  .submitButtonStyle {
+    background-color: #0070B9;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  };
+
+  .toggle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .toggle-container {
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-slider {
+    width: 21px;
+    height: 21px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.3s ease;
+  }
+  
+  .toggle-container.active {
+    background-color: #4caf50;
+  }
+  
+  .toggle-container.active .toggle-slider {
+    left: 27px;
+  }
+  
+  .toggle-label {
+    font-weight: bold;
+  }
+  
